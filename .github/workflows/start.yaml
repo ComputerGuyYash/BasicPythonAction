@@ -9,6 +9,6 @@ jobs:
     name: Update this repo's README with latest project updates
     runs-on: ubuntu-latest
     steps:
-      - run: python -m pip install PyGithub  # Installing dependencies
+      - run: python -m pip install instagram-scraper  # Installing dependencies
       - run: python ${{ github.action_path }}/basic.py
   
