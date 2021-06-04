@@ -9,10 +9,6 @@ jobs:
     name: Update this repo's README with latest project updates
     runs-on: ubuntu-latest
     steps:
-      #- run: python -m pip install instagram-scraper  # Installing dependencies
-      - uses: canastro/copy-file-action@master
-        with:
-          source: basic.py
-          target: /usr/bin/basic.py
-      - run: python basic.py
+      - run: python -m pip install instagram-scraper 
+      - run: instagram-scraper milliebobbybrown
   
